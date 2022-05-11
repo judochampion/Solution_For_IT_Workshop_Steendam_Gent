@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+ToetsenGenerator/app.config
+ToetsenGenerator/app.config
