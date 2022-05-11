@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="6ITN-namenlijst.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="6ITN-namenlijst.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSpire.Doc" Version="10.2.0" />
+    <PackageReference Include="MessageBird" Version="3.2.0" />
+  </ItemGroup>
+
+</Project>
